@@ -1,66 +1,281 @@
-.cards {
-  display: flex;
-  width: 130%;
-  padding: 50px;
-}
-
-.card {
-  background: rgb(86, 7, 214);
-  background: linear-gradient(
-    90deg,
-    rgb(23, 207, 137) 1%,
-    rgba(33, 25, 173, 1) 100%
-  );
-  color: white;
-  width: 300px;
-  height: 250px;
-  border-radius: 50px;
-  padding: 30px;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
-    -5px 0 10px rgba(0, 0, 0, 0.1);
-
-  transition: all 0.3s ease;
-}
-
-.card a {
-  color: rgb(231, 240, 239);
-  text-decoration: none;
-  font-weight: bold;
-  background-color: black;
-}
-
-.card a:hover {
-  color: lightyellow;
-}
-
-.card:hover {
-  margin-right: 80px;
-  transform: rotate(3deg) translateY(-15px);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
-.card .header {
-  flex: 1;
+body{
+    font-family: Arial, Helvetica, sans-serif; color: rgb(105, 21, 32);
+
 }
 
-.card .header .date {
-  padding: 10px 0;
+img{
+    max-width: 100%;
+    display: block;
+
 }
 
-.card .header .title {
-  font-size: 28px;
+a{
+    text-decoration: none;
+    color: inherit;
+
 }
 
-card[class*="element"] {
-  margin-left: -100px;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: white; 
+
 }
 
-.element-1:hover,
-.element-2:hover {
-  margin-left: -130px;
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.logo span{
+    background-color: aqua;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+.btn-catalogo{
+    background-color: blue;
+    padding: 8px 16px;
+    border-radius: 20px;
+
+
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5%;
+    background: linear-gradient(90deg, );
+    color: white;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.banner-text{
+    max-width: 500px;
+}
+
+.banner-text h1{
+font-size: 2.5rem;
+margin-bottom: 15px;
+
+}
+.banner .btn{
+    background: rgb(20, 14, 4);
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+
+
+}
+
+.banner-img{
+    width: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#catalogo{
+    padding: 50px 5%;
+    background: fixed;
+
+}
+
+#catalogo h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+}
+
+.card{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px rgb(red, green, blue);
+    transition: .3s;
+}
+
+
+.card:hover{
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 25px rgb(red, green, blue);
+    
+}
+
+.card img{
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.card-info{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+.card-info p{
+    color: black;
+    font-size: .9rem; 
+    flex-grow: 1;
+}
+
+.precio{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-detalle{
+    margin-top: 10px;
+    text-align: center;
+    background: wheat;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-detalle:hover{
+    background: pink;
+
+}
+
+#beneficios{
+    padding: 50 5%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#beneficios h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.beneficio{
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid;
+    border-radius: 12px;
+
+}
+
+footer{
+    background: gold;
+    color: brown;
+    padding: 40px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+footer h4{
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+footer ul{
+    list-style: none;
+}
+
+
+@keyframes aparecer {
+    from{opacity:0;
+    transform: translateY(30px);}
+    to {opacity: 1;
+    transform: translateX(0);} 
+}
+
+.grid-productos .card{
+    animation: aparecer 0.6s ease forwards;
+}
+
+.grid-productos .card:nth-child(1){animation-delay: 0.1s;}
+.grid-productos .card:nth-child(2){animation-delay: 0.2s;}
+.grid-productos .card:nth-child(3){animation-delay: 0.3s;}
+.grid-productos .card:nth-child(4){animation-delay: 0.4s;}
+.grid-productos .card:nth-child(5){animation-delay: 0.5s;}
+.grid-productos .card:nth-child(6){animation-delay: 0.6s;}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px rgb(red, green, blue);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.card:hover{
+    transform: translateY(-12px) scale(1.02) rotate(0.5deg);
+    box-shadow: 0 15px 30px rgb(red, green, blue);
+
+}
+
+.card img{
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+
+.btn-detalle{
+    margin-top: 10px;
+    text-align: center;
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.card:hover .btn-detalle{
+    background: whitesmoke;
+    transform: scale(1.05);
+}
+
+.btn-detalle:active{
+    transform: scale(0.95);
 }

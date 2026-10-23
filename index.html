@@ -3,235 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>tecshop</title>
     <link rel="stylesheet" href="stilo.css">
-</head> TECMARCK
+</head>
 <body>
-    <h1>SISTEMA DE CATALOGOS DE PRODUCTOS TECNOLOGICOS</h1>
 
-    <NAV>
-        <UL>
-            <nav><a href="#1">LAPTOP</a></nav>
-            <LI>PROCESADORES</LI>
-            <LI>MEMORIA RAM</LI>
-            <LI>TECLADO MECANICO</LI>
-           <LI> MOUSE INALAMBRICO</LI>
-           <LI>ROUTER WIFI</LI>
-           <LI>DISCO SSD</LI>
-           <LI></LI>
-        </UL>
-    </NAV>  
-
-      
-    <div class="cards">
-      <div class="card">
-        <div class="header">
-          <div class="date">lo ultimo en generacion</div>
-          
-        </div>
-        <div id="1" class="footer">
-          <div class="author">
-            <a href="#">
-              <img src="" alt="" />
-              <span>LAPTOP</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div  class="cards">
-      <div class="card"> 
-        <div class="header">
-            <img src="Best_Laptop_Ever.jpg" alt=""  width="200">
-          <div class="date">precio: $5.000</div>
-        </div>
-        <div class="footer">
-          <div class="author">
-           
-          </div>
-        </div>
-      </div>
-
-       <div id="#1" class="cards">
-      <div class="card">
-        <div class="header">
-          <div class="date">lo ultimo en generacion</div>
-          
-        </div  >
-        <div  class="footer">
-          <div class="author">
-            <a href="#">
-              <img src="" alt="" />
-              <span id="1">PROCESADORES</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-      <div class="card">
-        <div class="header">
-            <img src="Best_Laptop_Ever.jpg" alt=""  width="200">
-          <div class="date">precio: $5.000</div>
-        </div>
-        <div class="footer">
-          <div class="author">
-           
-          </div>
-        </div>
-      </div>
+    <header>
+        <div class="logo"><span>ts</span>tecshop</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#catalogo">catalogo</a></li>
+                <li><a href="#beneficio">beneficio</a></li>
+                <li><a href="#catalogo" class="btn-catalogo">ver catalago</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-       <div class="cards">
-      <div class="card">
-        <div class="header">
-          <div class="date">lo ultimo en generacion</div>
-          
+    <section class="banner" id="inicio">
+        <div class="banner-text">
+            <h1>tecnologia que impulsa tu futuro</h1>
+            <p>equipos de ultima generacion </p>
+            <a href="#catalogo" class="btn">ver productos</a>
         </div>
-        <div class="footer">
-          <div class="author">
-            <a href="#">
-              <img src="" alt="" />
-              <span>MEMORIA RAM</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-      <div class="card">
-        <div class="header">
-            <img src="Best_Laptop_Ever.jpg" alt=""  width="200">
-          <div class="date">precio: $5.000</div>
-        </div>
-        <div class="footer">
-          <div class="author">
-           
-          </div>
-        </div>
-      </div>
+
+    </section>
+
+    <main id="catalago">
+        <h2>catalogo de productos</h2>
+        <div class="grid-productos">
+            <article class="card">
+                <img src="lenovo.jpg" alt="laptop lenovo">
+                <div class="card-info">
+                    <h3>laptop lenovo</h3>
+                    <p>marca: lenovo, procesador: core i712va, 16GB RAM</p>
+                    <span class="precio">s/3,499</span>
+                    <a href="#" class="btn-detalle">ver detalles</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="mecanico.webp" alt="teclado mecanico">
+                <div class="card-info">
+                    <h3>teclado mecanico rgb</h3>
+                    <p>tipo: blue switch, conexion: usb/ bluetooth</p>
+                    <span class="precio">s/ 189</span>
+                    <a href="#" class="btn-detalle">consultar</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="riuter.webp" alt="router wifi">
+                <div class="card-info">
+                    <h3>router tp-link ax3000 </h3>
+                    <p>velocidad: 3000 mbps, wi-fi 6 doble banda</p>
+                    <span class="precio"> s/ 279</span>
+                    <a href="#" class="btn-detalle">consultar</a>
+                </div>
+            </article>
 
 
-       <div class="cards">
-      <div class="card">
-        <div class="header">
-          <div class="date">lo ultimo en generacion</div>
-          
-        </div>
-        <div class="footer">
-          <div class="author">
-            <a href="#">
-              <img src="" alt="" />
-              <span>TECLADO MECANICO</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-      <div class="card">
-        <div class="header">
-            <img src="Best_Laptop_Ever.jpg" alt=""  width="200">
-          <div class="date">precio: $5.000</div>
-        </div>
-        <div class="footer">
-          <div class="author">
-           
-          </div>
-        </div>
-      </div>
+            <article class="card">
+                <img src="disco.webp" alt="disco ssd">
+                <div class="card-info">
+                    <h3>ssd kinsgton 1tb</h3>
+                    <p>capacidad: 1tb nvme, 3500 mb/s lectura</p>
+                    <span class="precio">s/ 320</span>
+                    <a href="#" class="btn-detalle">consultar</a>                  
+                </div>
+            </article>
 
+            <article class="card">
+                <img src="armado-pc-.jpg" alt="computadora">
+                <div class="card-info">
+                    <h3>PC GAMER  </h3>
+                    <p>gabinete: black, monitor ultima generacion </p>
+                    <span class="precio"> s/ 5.000</span>
+                    <a href="#" class="btn-detalle">consultar</a>
+                </div>
+            </article>
 
-       <div class="cards">
-      <div class="card">
-        <div class="header">
-          <div class="date">lo ultimo en generacion</div>
-          
         </div>
-        <div class="footer">
-          <div class="author">
-            <a href="#">
-              <img src="" alt="" />
-              <span>MOUSE INALAMBRICO</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-      <div class="card">
-        <div class="header">
-            <img src="Best_Laptop_Ever.jpg" alt=""  width="200">
-          <div class="date">precio: $5.000</div>
-        </div>
-        <div class="footer">
-          <div class="author">
-           
-          </div>
-        </div>
-      </div>
+    </main>
 
+    <section id="beneficio">
+        <h2>sus beneficios</h2>
+        <div class="beneficio"><h3>garantia por 12 meses</h3></div>
+        <div class="beneficio"><h3>soporte tecnico </h3></div>
+        <div class="beneficio"><h3>entrega inmediata</h3></div>
+    </section>
 
-       <div class="cards">
-      <div class="card">
-        <div class="header">
-          <div class="date">lo ultimo en generacion</div>
-          
-        </div>
-        <div class="footer">
-          <div class="author">
-            <a href="#">
-              <img src="" alt="" />
-              <span>ROUTER WIFI</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-      <div class="card">
-        <div class="header">
-            <img src="Best_Laptop_Ever.jpg" alt="" width="200">
-          <div class="date">precio: $5.000</div>
-        </div>
-        <div class="footer">
-          <div class="author">
-           
-          </div>
-        </div>
-      </div>
+    <footer id="cantacto">
+        <div><h4>tecshop juli</h4></div>
+        <div><h4>seccion</h4> <ul><li><a href="#inicio">inicio</a></li><a href="#catalogo">catalogo</a></ul></div>
 
-       <div class="cards">
-      <div class="card">
-        <div class="header">
-          <div class="date">lo ultimo en generacion</div>
-          
-        </div>
-        <div class="footer">
-          <div class="author">
-            <a href="">
-              <img src="" alt="" />
-              <span>DSICO SSD</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-      <div class="card">
-        <div class="header">
-            <img src="Best_Laptop_Ever.jpg" alt=""  width="200">
-
-          <div> precio: $5.000 </div>
-        </div>
-        <div class="footer">
-          <div class="author">
-           
-          </div>
-        </div>
-      </div>
-
-      
-
-
-      
-
-
+    </footer>
     
-
 </body>
 </html>
