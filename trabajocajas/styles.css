@@ -1,0 +1,44 @@
+
+.prueba{
+    background-color: bisque;
+    text-align: center;
+    padding: 25px;
+     border-radius: 20px;
+     background: linear-gradient(white 60%, darkblue 60%);
+}
+.contenedor-flex{
+    display: flex;
+    row-gap: 20px;
+    justify-content: center;
+    margin: 20px ;
+    gap: 10px;
+}
+
+.caja{
+   
+    width: 200px;
+    height: 300px;
+    padding: 15px;
+    background-color: rgb(18, 79, 97);
+    color:white;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    border-radius: 8px;
+  
+}
+
+.boton{
+    background-color: white;
+    width: 100px;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+.caja a{
+    display: block;
+   margin-left: auto;
+   margin-top: 130px;
+  
+    
+}  
+

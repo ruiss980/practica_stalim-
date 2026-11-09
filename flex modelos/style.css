@@ -63,6 +63,12 @@ h2{
 
     display: flex;
     align-items: flex baseline;
+    flex-wrap: wrap; /*mantienen en una sola linea*/
+    row-gap: 20px;  /*distancia de las cajas*/
+    column-gap: 30spx;  /*altura de los cuadros*/
+
+    /*flex-wrap: wrap-reverse;*/
+    /*gap: 10px;*/
     /* align-items: center;*/
     /*justify-content: space-evenly;  misma medida de cuadros*/
     /*justify-content: space-around; */
@@ -78,4 +84,97 @@ h2{
     height: 200px;
     padding:  15px;
     border: 2px  dashed blue;
+}
+
+
+.caja1{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 195, 255);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+
+}
+
+.caja2{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 0, 64);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.caja3{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 255, 98);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    order: 1; /*para cambiar el orden de cajas*/
+    /*flex-basis: 200px;*/ /* tamaño de las cajas*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.caja4{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 255, 98);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    /*flex-shrink: 1;*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.caja5{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 255, 98);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    /*flex-shrink: 1;*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.caja6{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(0, 255, 98);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-shrink: 2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
 }
