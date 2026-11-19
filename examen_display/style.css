@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    background: rgb(193, 192, 194);
+}
+
+.menu{
+    width: 220px;
+    height: 90vh;
+    flex-direction: column;
+    background: blue;
+    position: fixed;
+    display: flex;
+    padding: 20px;
+}
+.nave {
+    display: block;
+    color: aquamarine;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+.nave:first-of-type{
+    background-color: rgb(126, 124, 158);
+    color: white;
+    font-weight: bold;
+}
+
+.nave:hover{
+    background-color: brown;
+    color: white;
+}
+
+.pie{
+    margin-top: auto;
+}
+
+.panel{
+    margin-left: 220px;
+    flex: 1;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.panel >div:first-child{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+.panel >div:first-child p{
+    font-size: 12px;
+    
+}
+.logo{
+    text-align: right;
+
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+.contenido >div{
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    border-top: 4 px solid ;
+}
+.contenido h3{
+    font-size: 28px;
+    margin: 5px 0;
+}
+.contenido p{
+    font-size: 28px;
+}
+.caja1{
+    border-left: 4px solid blue;
+}
+.caja2{
+    border-left: 4px solid green;
+}
+.caja3{
+    border-left: 4px solid orangered;
+}
+.caja4{
+    border-left: 4px solid rgb(105, 14, 179);
+}
+.caja5{
+    border-left: 4px solid red;
+}
+
+
+.tabla{
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+table{
+    width: 100%;
+    margin-top: 10px;
+}
+table th, table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid rgb(27, 25, 25);
+    font-size: 13px;
+}
+
+
+
+
+
